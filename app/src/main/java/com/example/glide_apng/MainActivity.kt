@@ -1,8 +1,7 @@
 package com.example.glide_apng
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bumptech.glide.Glide
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Glide
+        GlideApp
             .with(this)
             .load("https://misc.aotu.io/ONE-SUNDAY/SteamEngine.png")
             .into(img)
